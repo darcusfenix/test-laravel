@@ -6,9 +6,13 @@ class Medico extends Model {
 
     protected $table = 'medico';
 
-    protected $fillable = ['actualLongitud','actualLatitud', 'disponible', 'tarjeta_valida'];
+    protected $fillable = ['actual_longitud','actual_latitud', 'disponible', 'tarjeta_valida'];
 
     public $timestamps = false;
 
+    public function alergia()
+    {
+        return $this->belongsTo('Alergia');
+    }
 
 }

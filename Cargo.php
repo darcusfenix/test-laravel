@@ -9,6 +9,4 @@ class Cargo extends Model {
     protected $fillable = ['monto'];
 
     public $timestamps = false;
-
-
 }

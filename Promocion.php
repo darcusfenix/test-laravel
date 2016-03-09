@@ -6,7 +6,7 @@ class Promocion extends Model {
 
     protected $table = 'promocion';
 
-        protected $fillable = ['nombre', 'fechaInicio', 'fechaFin', 'porcentajeDescuento', 'horaInico', 'horaFin'];
+        protected $fillable = ['nombre', 'fecha_inicio', 'fecha_fin', 'porcentaje_descuento', 'hora_inico', 'hora_fin'];
 
     public $timestamps = false;
 

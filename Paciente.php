@@ -6,7 +6,7 @@ class Paciente extends Model {
 
     protected $table = 'paciente';
 
-    protected $fillable = ['actualLongitud', 'actualLatitud', 'tarjeta_valida'];
+    protected $fillable = ['actual_longitud', 'actual_latitud', 'tarjeta_valida'];
 
     public $timestamps = false;
 

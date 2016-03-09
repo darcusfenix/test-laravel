@@ -6,7 +6,7 @@ class HorarioServicio extends Model {
 
     protected $table = 'horario_servicio';
 
-    protected $fillable = ['nombre','horaInicio','horaFin','costo'];
+    protected $fillable = ['nombre','hora_inicio','hora_fin','costo'];
 
     public $timestamps = false;
 

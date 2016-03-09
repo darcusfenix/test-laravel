@@ -10,4 +10,10 @@ class Alergia extends Model {
 
     public $timestamps = false;
 
+    public function pacientes()
+    {
+        return $this->hasMany('Paciente');
+    }
+
+
 }
