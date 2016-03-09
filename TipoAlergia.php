@@ -10,5 +10,7 @@ class TipoAlergia extends Model {
 
     public $timestamps = false;
 
-
+    public function alergias() {
+        return $this->hasMany('App\Alergia', 'id');
+    }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class Alergia extends Model {
 
     protected $table = 'alergia';
@@ -10,9 +11,9 @@ class Alergia extends Model {
 
     public $timestamps = false;
 
-    public function pacientes()
+    public function tipo()
     {
-        return $this->hasMany('Paciente');
+        return $this->belongsTo('App\TipoAlergia' ,'id');
     }
 
 
